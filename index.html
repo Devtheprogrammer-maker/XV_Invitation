@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>You're Invited to Sofia's Quinceañera!</title>
+    <title>You're Invited to Milly's Quinceañera!</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Great+Vibes&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <!-- Background Music -->
+    <audio id="inviteMusic" src="music/song.mp3" loop></audio>
+
+
     <!-- The Invitation Cover that opens -->
     <div id="invitation-cover">
         <div class="cover-content">
             <p>You're invited to the Quinceañera of</p>
-            <h1>Milagros Vivas</h1>
+            <h1>Milly Vivas</h1>
             <p class="scroll-prompt">Click to Open Invitation</p>
         </div>
         <div class="flap left-flap"></div>
@@ -25,7 +29,7 @@
         <!-- Header & Navigation -->
         <header>
             <nav>
-                <div class="logo">Miaglos' XV</div>
+                <div class="logo">Milly's XV</div>
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#details">Event Details</a></li>
@@ -41,17 +45,17 @@
             <div class="hero-content">
                 <h1>A Dream Come True</h1>
                 <h2>Celebrate the 15th Birthday of</h2>
-                <p class="quince-name">Sofia Rodriguez</p>
+                <p class="quince-name">Milly Vivas</p>
                 <p class="date">Saturday, November 15, 2025</p>
-                <a href="#rsvp" class="cta-button">RSVP Now</a>
+                <!-- <a href="#rsvp" class="cta-button">RSVP Now</a> -->
             </div>
         </section>
 
         <!-- About Section -->
         <section id="about" class="content-section">
             <h2>Our Story</h2>
-            <img src="img/71a0CPg4v8L._UY350_.jpg" alt="Sofia Rodriguez" class="profile-pic">
-            <p>With great joy and pride, the Rodriguez family invites you to celebrate the transition of their beloved daughter, Sofia, from childhood to young womanhood. This day has been a dream for many years, and we are so excited to share this magical moment with our closest family and friends. Thank you for being a part of her journey!</p>
+            <img src="img/71a0CPg4v8L._UY350_.jpg" alt="Milly Vivas" class="profile-pic">
+            <p>With great joy and pride, the Vivas family invites you to celebrate the transition of their beloved daughter, Milly, from childhood to young womanhood. This day has been a dream for many years, and we are so excited to share this magical moment with our closest family and friends. Thank you for being a part of her journey!</p>
         </section>
 
         <!-- Event Details Section -->
@@ -60,20 +64,21 @@
             <div class="details-container">
                 <div class="detail-box">
                     <h3>Ceremony</h3>
-                    <p><strong>Time:</strong> 2:00 PM</p>
-                    <p><strong>Location:</strong> St. Mary's Cathedral</p>
-                    <p>123 Church Street, Anytown, USA</p>
+                    <p><strong>Time:</strong> 4:00 PM</p>
+                    <p><strong>Location:</strong> St. Francis Xavier Parish</p>
+                    <p>1st St South, Corozal Town, Belize</p>
                     <a href="#" class="map-link">View Map</a>
 
                     <div>
                         Logic for count down
                     </div>
+
                 </div>
                 <div class="detail-box">
                     <h3>Reception</h3>
                     <p><strong>Time:</strong> 5:00 PM</p>
-                    <p><strong>Location:</strong> The Grand Ballroom</p>
-                    <p>456 Celebration Ave, Anytown, USA</p>
+                    <p><strong>Location:</strong> Civic Center</p>
+                    <p>4th Avenue, Corozal Town, Belize</p>
                     <a href="#" class="map-link">View Map</a>
 
                     <div>
@@ -81,9 +86,9 @@
                     </div>
                 </div>
             </div>
-            <div class="dress-code">
+            <!-- <div class="dress-code">
                 <p><strong>Dress Code:</strong> Formal Attire</p>
-            </div>
+            </div> -->
         </section>
 
         <!-- Court of Honor Section -->
@@ -92,22 +97,22 @@
             <div class="court-grid">
                 <div class="court-member">
                     <img src="img/71a0CPg4v8L._UY350_.jpg" alt="Dama">
-                    <h4>Isabella Garcia</h4>
-                    <p>Dama</p>
+                    <h4>Devin Vivas</h4>
+                    <p>Chambelán de Honor</p>
                 </div>
                 <div class="court-member">
                     <img src="img/71a0CPg4v8L._UY350_.jpg" alt="Chambelan">
-                    <h4>Mateo Hernandez</h4>
-                    <p>Chambelán de Honor</p>
+                    <h4>Erick Cowo</h4>
+                    <p>Chambelán</p>
                 </div>
                  <div class="court-member">
                     <img src="img/71a0CPg4v8L._UY350_.jpg" alt="Dama">
-                    <h4>Olivia Martinez</h4>
-                    <p>Dama</p>
+                    <h4>Ernesto Martinez</h4>
+                    <p>Chambelán</p>
                 </div>
                 <div class="court-member">
                     <img src="img/71a0CPg4v8L._UY350_.jpg" alt="Chambelan">
-                    <h4>Lucas Lopez</h4>
+                    <h4>Yurem Mohz</h4>
                     <p>Chambelán</p>
                 </div>
             </div>
@@ -125,7 +130,7 @@
         </section>
 
         <!-- RSVP Section -->
-        <section id="rsvp" class="content-section">
+        <!-- <section id="rsvp" class="content-section">
             <h2>Will You Be Joining Us?</h2>
             <p>Please RSVP by October 15, 2025</p>
             <form class="rsvp-form">
@@ -142,32 +147,38 @@
              <div class="gift-info">
                 <p>Your presence is the only gift we need. However, if you wish to honor Sofia with a gift, a monetary contribution towards her future endeavors would be greatly appreciated.</p>
             </div>
-        </section>
+        </section> -->
 
         <!-- Footer -->
         <footer>
-            <p>Made with ❤️ for Sofia's Quinceañera</p>
+            <p>Made with ❤️ for Milly's Quinceañera</p>
             <p>November 15, 2025</p>
         </footer>
     </main>
 
-   <script>
-    const cover = document.getElementById('invitation-cover');
-    const mainContent = document.getElementById('main-content');
+<script>
+const cover = document.getElementById('invitation-cover');
+const mainContent = document.getElementById('main-content');
+const music = document.getElementById('inviteMusic');
 
-    let isOpened = false;
+let isOpened = false;
 
-    function openInvitation() {
-    if (isOpened) return; 
+function openInvitation() {
+    if (isOpened) return;
     isOpened = true;
-    coverClicked = true;
 
     cover.classList.add('opened');
     mainContent.style.visibility = 'visible';
-    }
 
-    cover.addEventListener('click', openInvitation);
-    </script>
+    // Play the music 🎶
+    music.play().catch(err => {
+        console.log("Autoplay blocked. User interaction needed:", err);
+    });
+}
+
+cover.addEventListener('click', openInvitation);
+</script>
+
 
 </body>
 </html>
